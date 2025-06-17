@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Burger Builder</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <button id="menu-btn" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    </button>
+                </li>
+                <li><a href="#" id="burgerbuilder">Burger Builder</a></li>
+                <li><a href="#" id="helo" style="display: none;">ORDER</a></li>
+                <li><a href="#" id="signup" onclick="submit()">login</a></li>
+                <li>
+                    <img src="/Images/burger-logo-600nw-672501463.webp" id="logo" alt="Burger Builder Logo" />
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main">
+        <div class="burger-container">
+            <img id="upperlayer" src="/Images/Screenshot 2025-05-13 233159.png" alt="Burger Top Layer" />
+            <div class="burger-text">No Ingredients Added</div>
+            <div class="lettuce1"></div>
+            <div class="lettuce2"></div>
+            <div class="lettuce3"></div>
+            <div class="bacon1"></div>
+            <div class="bacon2"></div>
+            <div class="bacon3"></div>
+            <div class="cheese1"></div>
+            <div class="cheese2"></div>
+            <div class="cheese3"></div>
+            <div class="meat1"></div>
+            <div class="meat2"></div>
+            <div class="meat3"></div>
+            <img id="downlayer" src="/Images/downlayer.png" alt="">
+        </div>
+        </div>
+        <div class="parent">
+            <div id="parent-text"><h5>Current Price:</h5></div>
+            <div id="lattuce">
+                <span id="items">lettuce</span>
+                <button id="less" onclick="lattuce_decrease()">Less</button>
+                <button id="more" onclick="lattuce_increase()">More</button>
+            </div>
+            <div id="bacon">
+                <span id="items">Bacon</span>
+                <button id="less" onclick="bacon_decrease()">Less</button>
+                <button id="more" onclick="bacon_increase()">More</button>
+            </div>
+            <div id="cheese">
+                <span id="item">Cheese</span>
+                <button id="less" onclick="cheese_decrease()">Less</button>
+                <button id="more" onclick="cheese_increase()">More</button>
+            </div>
+            <div id="meat">
+                <span id="items">Meat</span>
+                <button id="less" onclick="meat_decrease()">Less</button>
+                <button id="more" onclick="meat_increase()">More</button>
+            </div>
+            <div id="order"><button id="orderbtn">Sign Up To order</button></div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    
+   <script>
+    let val=Math.random()*3;
+    Math.round(val);
+    console.log(val);
+   </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+ html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background-color: #703B09;
+            
+   
+        }
+
+        ul.nav-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:2px;
+            margin: 0;
+            
+        }
+
+        ul.nav-list li {
+            display: flex;
+            align-items: center;
+            margin: 0 0.5rem;
+        }
+
+        ul.nav-list a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        ul.nav-list a:hover,
+        #menu-icon:hover {
+            color: aqua;
+        }
+
+        #menu-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        #menu-icon {
+            font-size: 1.5rem;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        #logo {
+            height: 50px;
+            width: 50px;
+        }
+        main{
+             height: 500px;
+            width: 100%;
+        }
+
+        .main {
+            background-color: white;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+            
+           
+        }
+
+        .burger-container {
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        .burger-container img {
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .burger-text {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        #downlayer{
+            width:450px;
+        }
+        .parent{
+
+           width:100%;
+           
+           display: flex;
+           background-color: #cf8f2e;
+           align-items:center;
+           flex-direction: column;
+           
+        }
+        #parent-text{
+           margin:20px;
+        }
+        
+        #less{
+            height:30px;
+            width:70px;
+            color:#cccccc;
+            background-color: #ac9980;
+            border:1px solid rgb(174, 148, 148);
+        }
+        #more{
+            height:30px;
+            width:70px;
+            color:#ffffff;
+            background-color: #8f5e1e;
+            border:1px solid rgb(172, 138, 138);
+            
+        }
+        #lattuce{
+            margin:10px;
+        }
+        #bacon{
+            margin-bottom:10px;
+        }
+        #cheese{
+            margin-bottom:10px;
+        }
+        #meat{
+            margin-bottom:10px;
+        }
+        #order{
+            margin-bottom: 10px;
+        }
+        #orderbtn{
+            width:150px;
+            height:40px;
+            color:#888888;
+            background-color: #c7c6c6;
+            border: none;
+            box-shadow: #888888;
+        }
+        #items{
+            margin:50px;
+            font-weight: bold;
+        }
+        #item{
+            font-weight: bold;
+            margin:46px;
+        }
+
+        
+        @media (max-width: 600px) {
+            ul.nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
